@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'com-output';
+
+  onomatopoeias: string[] = [];
+
+  onReceiveNewOnomatopia($event: string) {
+    console.log("onReceiveNew ! " + $event)
+    this.onomatopoeias.push($event);
+  }
+
 }
